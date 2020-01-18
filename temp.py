@@ -8,9 +8,5 @@ if (n := len(f)) == 1:
 else:
     for pocet in f:
         if pocet.isdigit():
-            pocet = int(pocet)
-            c = (pocet-32)*5/9
+            c = (int(pocet)-32)*5/9
             print(f'{pocet}°Fahrnheita je {c:.2f}° celsia')
-        else:
-            print('argument musi byt cislo')
-            sys.exit()
